@@ -1,0 +1,155 @@
+{
+  "Metadata": {
+    "title": "Mostafa Ahmed — Front-End Developer",
+    "description": "Portfolio of a front-end developer crafting modern web experiences."
+  },
+  "Nav": {
+    "logo": "Mostafa Ahmed",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "switchLocale": "Switch language"
+  },
+  "Home": {
+  "greeting": "Hello, I'm",
+  "name": "Mostafa Ahmed",
+  "role": "Frontend Developer",
+  "status": "Available for freelance work",
+  "description": "I turn your ideas into exceptional digital experiences. Specialized in building modern websites and web applications using the latest technologies.",
+  "cta": {
+    "projects": "Explore My Work",
+    "contact": "Contact Me"
+  }
+},
+  "About": {
+    "label": "About",
+    "title": "Passionate about crafting web experiences",
+    "p1": "I'm a front-end developer who loves turning ideas into real interfaces: fast, responsive, and enjoyable to use.",
+    "p2": "I mainly work with React and Next.js, with great attention to detail, performance, and UX across all screens.",
+    "stats": {
+      "years": "Years of experience",
+      "projects": "Completed projects",
+      "passion": "Passion for learning"
+    }
+  },
+  "Skills": {
+    "label": "Skills",
+    "title": "Technologies I work with",
+    "frontend": "Front-End",
+    "tools": "Tools & Technologies"
+  },
+"Projects": {
+  "label": "Work",
+  "title": "Selected projects",
+  "clickHere": "Click here",
+  "technologies": "Technologies",
+  "built": "What I Built",
+  "startProject": "Let's Start Your Next Project",
+  "items": {
+    "p1": {
+      "title": "E-commerce Store",
+      "desc": "A responsive e-commerce platform built with Next.js, TypeScript, and Tailwind CSS. I developed the user interface, integrated REST APIs, implemented authentication, product categories and brands, shopping cart, wishlist, orders, and checkout with online payment integration.",
+      "features": {
+        "authentication": "Implemented user authentication and protected user pages.",
+        "products": "Built product browsing with categories, brands, filtering, and product details.",
+        "cart": "Implemented shopping cart functionality with adding, updating, and removing products.",
+        "wishlist": "Implemented wishlist functionality and product management.",
+        "orders": "Implemented order creation and order history.",
+        "checkout": "Implemented checkout flow with cash and online payment options."
+      }
+    },
+
+   "p2": {
+  "title": "Social Media App",
+  "desc": "A social media application built with React, featuring user authentication, posts, and REST API integration."
+},
+
+  "p3": {
+    "title": "For Dinner",
+    "desc": "A modern and responsive restaurant website built to showcase meals, services, and restaurant content through a clean and attractive interface."
+  },
+
+   "p4": {
+  "title": "3adasa — Photography Blog",
+  "desc": "A responsive photography blog built with React and Vite, featuring a clean interface for exploring photography content and articles."
+},
+ "p5": {
+  "title": "Quiz App",
+  "desc": "An interactive quiz application built with HTML, CSS, and JavaScript, featuring dynamic questions, answer selection, and an engaging user experience."
+},
+
+   "p6": {
+  "title": "Cosmos Space Dashboard",
+  "desc": "A responsive space-themed dashboard designed with a modern interface to present astronomical and space-related information in an engaging way."
+},
+"p7": {
+  "title": "Personal Portfolio",
+  "desc": "A responsive personal portfolio website designed to showcase skills, projects, and professional information through a clean and modern interface."
+},
+"p8": {
+  "title": "Contact Manager",
+  "desc": "A responsive contact management application that allows users to add, search, organize, and manage contacts with favorite and emergency contact options."
+},
+"p9": {
+  "title": "Games Website",
+  "desc": "A modern and responsive gaming website designed to showcase games, esports content, team members, gaming services, and community information through an engaging interface."
+},
+"p10": {
+  "title": "Fund Manager",
+  "desc": "A responsive fund management website designed to help users manage and organize their financial information through a clean and user-friendly interface."
+},
+"p11": {
+  "title": "Your Dream Home",
+  "desc": "A modern and responsive real estate website for discovering, buying, selling, and renting properties, featuring property search, featured listings, services, FAQs, and a contact section."
+},
+"p12": {
+  "title": "The UX Review",
+  "desc": "A modern UX and technology blog designed to showcase articles, authors, categories, trending content, and community features through a bold and engaging interface."
+},
+"p13": {
+  "title": "DJI Mavic 4 Pro",
+  "desc": "A modern product website designed to showcase the DJI Mavic 4 Pro with an immersive interface focused on the drone, its features, and visual presentation."
+},
+"p14": {
+  "title": "FitCore Gym",
+  "desc": "A modern and responsive gym landing page featuring fitness services, expert trainers, member reviews, membership information, and a contact form."
+},
+"p15": {
+  "title": "ZOS — Women's Fashion Store",
+  "desc": "A premium women's fashion e-commerce website featuring curated collections, new arrivals, best sellers, product categories, size selection, discounts, customer reviews, and a modern shopping experience."
+},
+"p16": {
+  "title": "NEFERT — Beauty Store",
+  "desc": "A premium beauty e-commerce website offering skincare, hair care, and makeup products with categories, new arrivals, best sellers, special offers, product ratings, and a modern shopping experience."
+},
+"p17": {
+  "title": "Coffee Area",
+  "desc": "A modern and responsive coffee shop website designed to showcase coffee products and create an engaging browsing experience with a clean and attractive interface."
+},
+"p18": {
+  "title": "NutriPlan — Nutrition Planner",
+  "desc": "A nutrition and wellness planning application featuring meal recipes, product search, barcode scanning, food logging, nutrition tracking, and weekly progress insights."
+}
+  }
+},
+"Contact": {
+  "label": "Contact",
+  "title": "Have a project in mind?",
+  "subtitle": "Send me a message and let's talk about the details.",
+  "email": "Send Email",
+  "workTogether": "Let's Work Together",
+  "buildTitle": "Let's build",
+  "buildSubtitle": "something together.",
+  "buildDescription": "I'm always open to discussing new projects, creative ideas, or opportunities to build something great together.",
+  "services": {
+    "web": "Web Applications",
+    "landing": "Landing Pages",
+    "ecommerce": "E-commerce Websites"
+  }
+},
+  "Footer": {
+    "rights": "All rights reserved",
+    "made": "Built with Next.js & Tailwind CSS"
+  }
+}

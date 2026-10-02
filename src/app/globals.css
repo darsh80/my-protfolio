@@ -1,0 +1,532 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Dark mode بيشتغل بالكلاس (.dark) مش بإعداد نظام التشغيل */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  /* لون الـ accent — بنستخدمه كده: text-accent / bg-accent */
+  --color-accent: var(--accent);
+
+  /* الخطوط من next/font */
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: var(--font-plex-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* ============================================================
+   LIGHT MODE
+   ============================================================ */
+
+:root {
+  /* رصاصي فاتح بدل البنفسجي */
+  --accent: oklch(0.55 0.02 260);
+
+  color-scheme: light;
+
+  --background: oklch(0.97 0.005 260);
+  --foreground: oklch(0.18 0.01 260);
+
+  --card: oklch(0.985 0.003 260);
+  --card-foreground: oklch(0.18 0.01 260);
+
+  --popover: oklch(0.985 0.003 260);
+  --popover-foreground: oklch(0.18 0.01 260);
+
+  --primary: oklch(0.25 0.015 260);
+  --primary-foreground: oklch(0.985 0 0);
+
+  --secondary: oklch(0.92 0.008 260);
+  --secondary-foreground: oklch(0.25 0.015 260);
+
+  --muted: oklch(0.93 0.006 260);
+  --muted-foreground: oklch(0.48 0.015 260);
+
+  --accent-foreground: oklch(0.985 0 0);
+
+  --destructive: oklch(0.577 0.245 27.325);
+
+  --border: oklch(0.88 0.008 260);
+  --input: oklch(0.88 0.008 260);
+  --ring: oklch(0.55 0.02 260);
+
+  --chart-1: oklch(0.55 0.02 260);
+  --chart-2: oklch(0.48 0.015 260);
+  --chart-3: oklch(0.40 0.012 260);
+  --chart-4: oklch(0.32 0.01 260);
+  --chart-5: oklch(0.24 0.008 260);
+
+  --radius: 0.625rem;
+
+  --sidebar: oklch(0.97 0.005 260);
+  --sidebar-foreground: oklch(0.18 0.01 260);
+
+  --sidebar-primary: oklch(0.25 0.015 260);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+
+  --sidebar-accent: oklch(0.92 0.008 260);
+  --sidebar-accent-foreground: oklch(0.25 0.015 260);
+
+  --sidebar-border: oklch(0.88 0.008 260);
+  --sidebar-ring: oklch(0.55 0.02 260);
+}
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+
+.dark {
+  /* الدارك يفضل بنفسجي متوهج */
+  --accent: oklch(0.702 0.183 293.54);
+
+  color-scheme: dark;
+
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+
+  --accent-foreground: oklch(0.145 0 0);
+
+  --destructive: oklch(0.704 0.191 22.216);
+
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+/* ============================================================
+   FONTS
+   ============================================================ */
+
+html[lang="en"] body {
+  font-family: var(--font-display);
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-arabic);
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+html {
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: oklch(0.55 0 0 / 0.35);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
+  background-clip: padding-box;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ============================================================
+   EFFECTS
+   ============================================================ */
+
+/* ============================================================
+   GRID
+   ============================================================ */
+
+.bg-grid {
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(71 85 105 / 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(71 85 105 / 0.06) 1px,
+      transparent 1px
+    );
+
+  background-size: 56px 56px;
+
+  mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 40%,
+    black 30%,
+    transparent 75%
+  );
+}
+
+.dark .bg-grid {
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(255 255 255 / 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.05) 1px,
+      transparent 1px
+    );
+}
+
+/* ============================================================
+   GRADIENT TEXT
+   ============================================================ */
+
+@keyframes gradient-move {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Light Mode — رصاصي */
+.text-gradient {
+  background-image: linear-gradient(
+    90deg,
+    #475569,
+    #64748b,
+    #334155,
+    #475569
+  );
+
+  background-size: 250% auto;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  animation: gradient-move 7s ease-in-out infinite;
+}
+
+/* Dark Mode — بنفسجي + Cyan */
+.dark .text-gradient {
+  background-image: linear-gradient(
+    90deg,
+    #a78bfa,
+    #22d3ee,
+    #f472b6,
+    #a78bfa
+  );
+}
+
+/* ============================================================
+   TEXT GLOW
+   ============================================================ */
+
+.text-glow {
+  text-shadow: 0 0 30px rgb(71 85 105 / 0.15);
+}
+
+.dark .text-glow {
+  text-shadow:
+    0 0 40px rgb(139 92 246 / 0.45),
+    0 0 80px rgb(34 211 238 / 0.15);
+}
+
+/* ============================================================
+   BEAM
+   ============================================================ */
+
+@keyframes beam-slide {
+  from {
+    left: -30%;
+  }
+
+  to {
+    left: 130%;
+  }
+}
+
+.beam {
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 30%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #64748b 35%,
+    #94a3b8 65%,
+    transparent
+  );
+
+  box-shadow: 0 0 12px rgb(100 116 139 / 0.4);
+
+  animation: beam-slide 5s linear infinite;
+}
+
+/* ============================================================
+   ORBS
+   ============================================================ */
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(30px, -30px) scale(1.08);
+  }
+}
+
+.orb {
+  animation: float-slow 12s ease-in-out infinite;
+}
+
+.orb-delay {
+  animation-delay: -6s;
+}
+
+/* ============================================================
+   SPOTLIGHT
+   ============================================================ */
+
+/* Light Mode — رصاصي */
+.spotlight-bg {
+  background: radial-gradient(
+    circle,
+    rgb(100 116 139 / 0.08) 0%,
+    rgb(148 163 184 / 0.04) 40%,
+    transparent 70%
+  );
+}
+
+/* Dark Mode — بنفسجي + Cyan */
+.dark .spotlight-bg {
+  background: radial-gradient(
+    circle,
+    rgb(139 92 246 / 0.12) 0%,
+    rgb(34 211 238 / 0.05) 40%,
+    transparent 70%
+  );
+}
+
+/* ============================================================
+   BORDER BEAM
+   ============================================================ */
+
+@property --beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card-beam {
+  position: relative;
+  isolation: isolate;
+}
+
+.card-beam::before,
+.card-beam::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+
+  padding: 1px;
+
+  pointer-events: none;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  mask-composite: exclude;
+
+  animation: beam-rotate 5s linear infinite;
+}
+
+/* Light Mode — رصاصي */
+.card-beam::before {
+  background: conic-gradient(
+    from var(--beam-angle),
+    transparent 0deg,
+    transparent 290deg,
+    rgb(71 85 105 / 0.9) 330deg,
+    rgb(100 116 139) 358deg,
+    transparent 360deg
+  );
+}
+
+/* Dark Mode — بنفسجي + Cyan */
+.dark .card-beam::before {
+  background: conic-gradient(
+    from var(--beam-angle),
+    transparent 0deg,
+    transparent 290deg,
+    rgb(167 139 250 / 0.9) 330deg,
+    rgb(34 211 238) 358deg,
+    transparent 360deg
+  );
+}
+
+/* Light Mode — رصاصي */
+.card-beam::after {
+  padding: 3px;
+
+  filter: blur(10px);
+
+  background: conic-gradient(
+    from var(--beam-angle),
+    transparent 0deg,
+    transparent 300deg,
+    rgb(71 85 105 / 0.5) 335deg,
+    rgb(100 116 139 / 0.6) 358deg,
+    transparent 360deg
+  );
+}
+
+/* Dark Mode — بنفسجي + Cyan */
+.dark .card-beam::after {
+  background: conic-gradient(
+    from var(--beam-angle),
+    transparent 0deg,
+    transparent 300deg,
+    rgb(139 92 246 / 0.7) 335deg,
+    rgb(34 211 238 / 0.8) 358deg,
+    transparent 360deg
+  );
+}
+
+@keyframes beam-rotate {
+  to {
+    --beam-angle: 360deg;
+  }
+}
+
+/* ============================================================
+   SMOOTH SCROLL
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
